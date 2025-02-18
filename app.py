@@ -5,13 +5,14 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 
 # MongoDB Atlas connection URI (replace with your actual URI)
-# app.config["MONGO_URI"] = "mongodb+srv://cthis9917:12341234@cluster0.etgu0.mongodb.net/mydatabase?retryWrites=true&w=majority"
+# app.config["MONGO_URI"] = "mongodb+srv://cthis9917:12341234@cluster0.etgu0.mongodb.net/mydatabase?retryWrites=true&w=majority" 
+#  i have left this for temp use if you wish yuou test on it , will work as expected!
 app.config["MONGO_URI"] = "mongodb+srv://your_mongo_uri_here"
 
 
 mongo = PyMongo(app)
 
-# User model structure:
+# User model structure: 
 # {
 #     "_id": ObjectId,
 #     "name": str,
